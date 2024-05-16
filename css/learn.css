@@ -1,0 +1,140 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    padding: 0 20px;
+    background-color: #eaeaea;
+    padding: 50px 0;
+}
+
+.container .card {
+    overflow: hidden;
+    border-radius: 50px;
+    margin: auto;
+    width: 61%;
+    background: linear-gradient(to bottom right, #d16532, #fff),
+    linear-gradient(to top left,#fff, #d16532);
+}
+
+.container .card .wrap-image {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background: url('../img/bijikopi.jpg');
+}
+
+.container .card .wrap-image img {
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+    display: block;
+    margin: auto;
+    width: 32%;
+    border-radius: 50%;
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-top: 85px;
+    font-family: 'Inter', sans-serif;
+    color: #eaeaea;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+    padding: 25px;
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    text-shadow: 0px 0px 10px #eaeaea;
+}
+
+.container .card .buttons {
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+.container .card .buttons .menu {
+    width: 75%;
+    height: 20%;
+    background-color: white;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    
+}
+
+.container .card .buttons .menu .kurang {
+    border-radius: 0;
+    color: black;
+    background-color: white;
+}
+
+.container .card .buttons .menu .kurang:hover {
+    background-color: #eaeaea;
+}
+
+.container .card .buttons .menu .output {
+    border-radius: 0;
+    width: 70%;
+    background-color: white;
+    color: black;
+}
+
+.container .card .buttons .menu .tambah {
+    border-radius: 0;
+    background-color: #fff;
+    color: black;
+}
+
+.container .card .buttons .menu .tambah:hover {
+    background-color: #eaeaea;
+}
+
+
+
+.container .card .buttons button {
+    display: block;
+    width: 90%;
+    padding: 30px 0;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    background-color: #a63602;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    
+}
+
+.container .card .buttons button:hover {
+    background-color: #d16532;
+    color: #eaeaea;
+}

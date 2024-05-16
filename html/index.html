@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }, fontFamily: {
+                'inter': ['Inter', 'sans-serif'],
+                'rawwr': ['Edu TAS Beginner', 'cursive'],
+              }
+            }
+          }
+        }
+      </script>
+    <title>Permainan Batu Gunting Kertas</title>
+</head>
+<body>
+    <div class="h-screen container mx-auto rounded-xl shadow-lg bg-gradient-to-br from-emerald-400 via-emerald-500 to-emerald-700 flex flex-col justify-evenly items-center">
+          <h1 class="text-3xl font-inter font-bold capitalize text-center bg-gradient-to-r from-neutral-900 to-neutral-800 bg-clip-text text-transparent pt-5">permainan gunting batu kertas</h1>
+          <p class="capitalize text-md font-inter text-slate-800 pt-2 text-center">dibuat oleh <a href="#" class="text-white hover:text-slate-800 transition-all duration-200">arjun samudera ahli fikri</a> dengan menggunakan <span class="text-sky-600">html, css, javascript</span></p>
+        
+        <div class="w-40 mx-auto mt-10 rounded-xl overflow-hidden">
+            <img style="border-radius: 30px; margin-bottom: 20px; width:fit-content;" src="../img/batu.png" alt="batu" class="img-computer">
+        </div>
+
+        <div style="width: 12rem; height: 4rem; background-color: #333; border-radius: 30px; margin: 20px auto; font-size: 2rem; text-align: center; color: #eaeaea; font-weight: bold; padding-top: 5px;" class="result"></div>
+
+        <ul class="w-full flex flex-row justify-evenly items-center">
+          <li class="w-40 group cursor-pointer">
+            <img style="border-radius: 30px; margin-bottom: 20px; width:fit-content;" src="../img/batu.png" alt="batu" class="batu">
+          </li>
+          <li class="w-40 group cursor-pointer">
+            <img style="border-radius: 30px; margin-bottom: 20px; width:fit-content;" src="../img/gunting.png" alt="gunting" class="gunting">
+          </li>
+          <li class="w-40 group cursor-pointer">
+            <img style="border-radius: 30px; margin-bottom: 20px; width:fit-content;" src="../img/kertas.png" alt="kertas" class="kertas">
+          </li>
+        </ul>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
